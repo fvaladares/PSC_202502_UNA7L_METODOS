@@ -8,6 +8,10 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+
+//        int a = 10;
+//        int b = 4;
+//        System.out.println((double)a/b);
         // tipo identificador
         int numero1;
         int numero2;
@@ -25,12 +29,16 @@ public class Main {
         sc = new Scanner(System.in);
 
         // Leitura dos dados para realização dos cálculos
-        System.out.print("\n\nPor favor, informe o " +
-                "primeiro número: ");
+        System.out.print("""                
+                
+                Por favor, informe o \
+                primeiro número:\s""");
         numero1 = sc.nextInt();
 
-        System.out.print("\n\nPor favor, informe o " +
-                "segundo número: ");
+        System.out.print("""
+                \s
+                Por favor, informe o \
+                segundo número:\s""");
         numero2 = sc.nextInt();
 
         // Imprime o resultado da operação de soma
@@ -47,3 +55,5 @@ public class Main {
          */
     }
 }
+
+
