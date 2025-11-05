@@ -33,7 +33,7 @@ public class Main {
                 
                 Por favor, informe o \
                 primeiro número:\s""");
-        numero1 = sc.nextInt();
+            numero1 = sc.nextInt();
 
         System.out.print("""
                 \s
@@ -43,16 +43,23 @@ public class Main {
 
         // Imprime o resultado da operação de soma
         System.out.println(
-                calculadora.somaDoisInteiros(numero1, numero2));
+                Calculadora.somaDoisInteiros(numero1, numero2));
         // Imprime o resultado da operação de subtração
         System.out.println(
                 calculadora.subtracaoDoisInteiros(numero1, numero2));
+
+        System.out.println("Multiplicação " +
+                calculadora.multipilcacaoDoisInteiros(numero1, numero2));
 
         /*
                 TODO (CRIE UM MENU, UTILIZANDO WHILE OU DO/WHILE,
                  PARA PERMITIR QUE A PESSOA ESCOLHA QUAL OPERAÇÃO DESEJA
                  REALIZAR.)
          */
+    }
+
+    public static int multipilcacaoDoisInteiros(int a, int b) {
+        return a * b;
     }
 }
 
